@@ -22,15 +22,15 @@ def autoview(curent_x,pos_fin_x,pozitie_initiala_x,pozitie_initiala_y,dif_x,cure
             print(1,curent_x,curent_y)
             curent_x=curent_x+dif_x
             time.sleep(3)
-            if pyautogui.locateOnScreen(r'D:\homework\yt.png' , confidence=0.7)!= None:
-                #camp_google=pyautogui.locateOnScreen(r'D:\homework\yt.png' , confidence=0.7)
-                pyautogui.click(pyautogui.locateOnScreen(r'D:\homework\yt.png' , confidence=0.7))
+            if pyautogui.locateOnScreen(r'D:\homework\backk.png' , confidence=0.7)!= None:
+                #camp_google=pyautogui.locateOnScreen(r'D:\homework\backk.png' , confidence=0.7)
+                pyautogui.click(pyautogui.locateOnScreen(r'D:\homework\backk.png' , confidence=0.7))
         else:
             curent_x=pozitie_initiala_x
             time.sleep(1)
             pyautogui.move(curent_x,curent_y)
             pyautogui.scroll(-83)
-            time.sleep(4)   
+            time.sleep(8)   
 webbrowser.open("https://www.youtube.com/")
 time.sleep(5)           
 autoview(curent_x,pos_fin_x,pozitie_initiala_x,pozitie_initiala_y,dif_x,curent_y,dif_y,pos_fin_y)
